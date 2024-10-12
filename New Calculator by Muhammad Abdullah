@@ -94,12 +94,10 @@ int main() {
 	(choose2=="no")?"As if I've told you":"Hey are you Blind or Drunk";
 	cout<<choice2<<"\n\n";
 	
-	
 	/*Created by : Muhammad Abdullah 
 	Roll Number: 0119
 	(Please Refrain from Stealing it...(copyright protected))*/
-	
-																							//used ANSI code to create a watermark in my output to make it beautiful and entertaining to Viewers																												
+				//used ANSI code to create a watermark in my output to make it beautiful and entertaining to Viewers																												
 	cout<<"\033[1;37;4;7mCreated by : Muhammad Abdullah\033[0m\n\033[1;5;4;36;7m Roll Number: 0119\033[0m"<<endl;		
 	return 0;																																							
 }
