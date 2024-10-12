@@ -1,0 +1,105 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout<<"\t\t    ================================="<<endl;
+	//Used My name with ANSI code to make it more beautiful and added spaces to make it be seen in the Top Centre of the Output Screen
+	cout<<"\t\t    \033[1;4;36m CALCULATOR BY MUHAMMAD ABDULLAH \033[0m\n\t\t\033[1;36m   ===================================\033[0m\n\n\n";
+	
+	//Putting two variables in Double 
+	//num1 is the First Number
+	double num1, num2;
+	//Using cout before cin to add a beautiful line to put in number instead of blank space
+	cout << "Enter the First Number : ";
+	//Using cin to manually add a value to the num1 variable
+	cin >> num1 ;
+	//same as above 
+	cout << "Enter the Second Number : ";
+	//same as above to add a value to num2
+	cin >> num2;
+	
+	cout<<"What do you want to do?\n 1.Addition \n 2.Subtraction \n 3.Multiplication \n 4.Division \n 5.Square \n 6.Cube \n 7.Table(Multiples UpTo 10)\n";
+	
+	
+	// Long Story. Short.... I just created many variables and assign them with the Formula while using num1 and num2
+	//and also taking cout just like above to make it beautiful 
+	int sum;
+	sum = num1 + num2;
+	cout << "\nThe Sum of the Numbers is : "<<num1<<"+"<<num2<<" = " <<" \033[1;4;7m"<< sum<<"\033[0m"<<" \n"<< endl;
+	int sub = num1 - num2;
+	cout << "The Difference of the Numbers is : " <<num1<<"-"<<num2<<" = "<<" \033[4;1;7m"<< sub <<"\033[0m" <<" \n"<<endl;
+	int mul = num1 * num2;
+	cout << "The Product of the Numbers is : " <<num1<<"*"<<num2<<" = "<<" \033[1;4;7m"<< mul <<"\033[0m" <<" \n"<<endl;
+	double div = num1 / num2;
+	cout << "The Division of the Numbers is : "<<num1<<"/"<<num2<<" = "<<" \033[1;4;7m"<< div <<"\033[0m" <<" \n"<<endl;
+	double square1=num1*num1;
+	
+	//squares were easily added but I don't know anything about square root because there is no formula of square root on internet using the operator 
+	cout<<"The Square of the First Number is : "<<num1<<"²"<<" = "<<"\033[1;4;7m"<<square1<<"\033[0m" <<" \n"<<endl;
+	double square2=num2*num2;
+	cout<<"The Square of the Second Number is : "<<num2<<"²"<<" = "<<"\033[1;4;7m"<<square2<<"\033[0m" <<" \n"<<endl;
+	double cube1=num1*num1*num1;
+	cout<<"The Cube of the First Number is : "<<"\033[1;4;7m"<<cube1<<" \033[0m" <<" \n"<<endl;
+	double cube2=num2*num2*num2;
+	cout<<"The Cube of the Second Number is : "<<"\033[1;4;7m"<<cube2<<" \033[0m"<<" \n"<<endl;
+	
+	//used a for loop to create a counting from 1 to 10 and then multiplied num1 and num2 with each number to create a table 
+	
+	int index;
+	for(index=1;index<=10;index=index+1)
+	cout<<num1<<"*" <<index<<"=" <<index*num1<<"\n" <<num2<<"*"<<index<<"="<<index*num2<<"\n"<<endl;
+	
+	//for left shift and right shift converted the data type from double to int and created a new variable num3 and then used bitwise operators to find left and right shift 
+	
+	int num3=num1;
+	int leftshift1;
+	leftshift1= num3 << 1;
+	cout<<"The Left Shift of the First Number is : " <<"\033[1;4;7m"<<leftshift1<<"\033[0m"<<endl;
+	
+	int rightshift1;
+	rightshift1 = num3 >> 1;
+	cout<<"The Right Shift of the First Number is : "<<"\033[1;4;7m"<<rightshift1<<"\033[0m"<<"\n\n";
+	
+	//used ternary operator "?" to create a choices situation to choose yes or no and then a result of choosing either yes or no
+	
+	cout<<"Do you wanna know how the answer came ???(yes or no)\n";
+	string choose1;
+	cin>>choose1;
+	
+	string choice1;
+	choice1=(choose1=="yes")?"Why should I?":
+	(choose1=="no")?"As if I've told you":"Hey are you Blind or Drunk";
+	cout<<choice1 <<"\n\n";
+	
+	//same as above created a new variable and changed data type to int to find left and right shift 
+	
+	int num4=num2;
+	
+	int leftshift2;
+	leftshift2= num4 << 1;
+	cout<<"The Left Shift of the Second Number is : " <<"\033[1;4;7m"<<leftshift2<<"\033[0m"<<endl;
+	
+	int rightshift2;
+	rightshift2 = num4 >> 1;
+	cout<<"The Right Shift of the Second Number is : "<<"\033[1;4;7m"<<rightshift2<<" \033[0m"<<"\n\n";
+	
+	//same as above used ternary operator to create a situation of choosing and different result of different choosed situation 
+	
+		cout<<"Do you wanna know how the answer came ???(yes or no)\n";
+	string choose2;
+	cin>>choose2;
+	
+	string choice2;
+	choice2=(choose2=="yes")?"Why should I?":
+	(choose2=="no")?"As if I've told you":"Hey are you Blind or Drunk";
+	cout<<choice2<<"\n\n";
+	
+	
+	/*Created by : Muhammad Abdullah 
+	Roll Number: 0119
+	(Please Refrain from Stealing it...(copyright protected))*/
+	
+																							//used ANSI code to create a watermark in my output to make it beautiful and entertaining to Viewers																												
+	cout<<"\033[1;37;4;7mCreated by : Muhammad Abdullah\033[0m\n\033[1;5;4;36;7m Roll Number: 0119\033[0m"<<endl;		
+	return 0;																																							
+}
