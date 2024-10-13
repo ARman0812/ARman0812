@@ -18,7 +18,6 @@ int main() {
 	//same as above to add a value to num2
 	cin >> num2;
 	
-	cout<<"What do you want to do?\n 1.Addition \n 2.Subtraction \n 3.Multiplication \n 4.Division \n 5.Square \n 6.Cube \n 7.Table(Multiples UpTo 10)\n";
 	
 	
 	// Long Story. Short.... I just created many variables and assign them with the Formula while using num1 and num2
