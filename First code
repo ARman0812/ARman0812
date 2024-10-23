@@ -1,1 +1,17 @@
 
+#include <iostream>
+using namespace std;
+
+int main (){
+	int colum;
+	int row;
+	
+	for (row=1;row<=20;row++){
+		cout<<endl;
+		for (colum=1;colum<=row;colum++){
+		cout<<"*";
+		}
+	}
+	return 0;	
+}
+//created by Muhammad Abdullah 0119 BSCS
